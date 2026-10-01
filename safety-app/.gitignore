@@ -1,0 +1,25 @@
+# Expo / Metro
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Environment — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Native build artefacts
+ios/
+android/
+*.jks
+*.keystore
+*.mobileprovision
+*.p8
+*.p12
+*.cer
+
+# OS
+.DS_Store
+Thumbs.db

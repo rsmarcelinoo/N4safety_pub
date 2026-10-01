@@ -1,0 +1,16 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+.idea/
+
+## Secrets — never commit these
+appsettings.Production.json
+appsettings.Staging.json
+*.pfx
+*.p12
+
+## Logs
+logs/
+*.log

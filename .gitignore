@@ -1,0 +1,62 @@
+# --- macOS / General ---
+.DS_Store
+*.pem
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+
+# --- N4Safety App (Native & Expo) ---
+
+# dependencies
+node_modules/
+safety-app/node_modules/
+
+# Expo
+safety-app/.expo/
+safety-app/dist/
+safety-app/web-build/
+safety-app/expo-env.d.ts
+
+# Native (Android/iOS common)
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# local env files
+.env*.local
+safety-app/.env*.local
+
+safety-app/app-example
+
+# Generated native folders
+safety-app/ios/
+safety-app/android/
+
+# --- iOS Specific (Merged from safety-app/ios/.gitignore) ---
+safety-app/ios/build/
+safety-app/ios/*.pbxuser
+!safety-app/ios/default.pbxuser
+safety-app/ios/*.mode1v3
+!safety-app/ios/default.mode1v3
+safety-app/ios/*.mode2v3
+!safety-app/ios/default.mode2v3
+safety-app/ios/*.perspectivev3
+!safety-app/ios/default.perspectivev3
+safety-app/ios/xcuserdata/
+safety-app/ios/*.xccheckout
+safety-app/ios/*.moved-aside
+safety-app/ios/DerivedData/
+safety-app/ios/*.hmap
+safety-app/ios/*.ipa
+safety-app/ios/*.xcuserstate
+safety-app/ios/project.xcworkspace
+safety-app/ios/.xcode.env.local
+safety-app/ios/*.jsbundle
+safety-app/ios/Pods/

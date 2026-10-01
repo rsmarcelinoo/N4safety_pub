@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>N4SafetyApi</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Database -->
+    <PackageReference Include="Dapper"   Version="2.1.35" />
+    <PackageReference Include="Npgsql"   Version="8.0.3" />
+
+    <!-- Auth -->
+    <PackageReference Include="BCrypt.Net-Next"                                Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer"  Version="8.0.13" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens"                 Version="8.0.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt"                Version="8.0.1" />
+
+    <!-- Push + SMS -->
+    <PackageReference Include="Twilio" Version="7.3.1" />
+
+    <!-- Docs -->
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+
+    <!-- Health checks -->
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+  </ItemGroup>
+
+</Project>
